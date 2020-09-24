@@ -105,7 +105,7 @@ export class WebXRMeshDetector extends WebXRAbstractFeature {
         }
     }
 
-    public addCustomMeshProvider(meshProvider: ICustomWebXRMeshProvider): void {
+    public registerCustomMeshProvider(meshProvider: ICustomWebXRMeshProvider): void {
         if (!this._meshProviders.has(meshProvider))
         {
             this._meshProviders.add(meshProvider);
@@ -115,7 +115,7 @@ export class WebXRMeshDetector extends WebXRAbstractFeature {
         }
     }
 
-    public removeCustomMeshProvider(meshProvider: ICustomWebXRMeshProvider): void {
+    public unregisterCustomMeshProvider(meshProvider: ICustomWebXRMeshProvider): void {
         if (this._meshProviders.has(meshProvider)) {
             meshProvider.onMeshAddedObservable.removeCallback(this._onMeshAdded);
             meshProvider.onMeshUpdatedObservable.removeCallback(this._onMeshUpdated);
