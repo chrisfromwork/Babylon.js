@@ -1,5 +1,6 @@
 export * from "./WebXRHitTestLegacy";
 export * from "./WebXRAnchorSystem";
+export * from "./WebXRMeshDetector";
 export * from "./WebXRPlaneDetector";
 export * from "./WebXRBackgroundRemover";
 export * from "./WebXRControllerTeleportation";
