@@ -173,7 +173,6 @@ export class WebXRMeshDetector extends WebXRAbstractFeature {
     }
 }
 
-//register the plugin
 WebXRFeaturesManager.AddWebXRFeature(
     WebXRMeshDetector.Name,
     (xrSessionManager, options) => {
